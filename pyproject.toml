@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fast_api_demo"
+version = "0.1.1"
+description = ""
+authors = ["Mu <mu@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.61.2"
+Hypercorn = "^0.11.1"
+pydantic = "^1.7.2"
+click = "^7.1.2"
+
+[tool.poetry.scripts]
+fad = "fast_api_demo.cli:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
